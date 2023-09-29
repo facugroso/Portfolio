@@ -14,25 +14,25 @@ const Main = () => {
           <h1 className="text-4xl text-xl font-bold text-white-800">
             Welcome, I´m Facundo Groso.
           </h1>
-          <h2 className="flex sm:text-3xl text-2xl pt-4 text-white-80">
+          <h2 className="flex sm:text-3xl text-2xl pt-4 text-white-800">
             <TypeAnimation
               sequence={[
                 "Developer FullStack jr.",
                 1000,
-                "Knowledge of HTML5, CSS3, JavaScript and React.",
+                "HTML5, CSS3, JavaScript and React.",
                 1000,
-                "Graduated from the intentional Bootcamp (theoretical-practical) of Hack Academy.",
+                "Hack Academy Graduate.",
                 1000,
-                "I specialized in MERN technologies and acquired Knowledge of SQL.",
+                "I specialized in MERN.",
                 1000,
               ]}
               wrapper="span"
               cursor={true}
               repeat={Infinity}
-              style={{ fontSize: "1em", paddingLeft: "5px" }}
+              style={{ fontSize: "0.8em", paddingLeft: "5px" }}
             />
           </h2>
-          <div className="flex justify-between  items-center  pt-6 max-w-[200px] w-full">
+          <div className="flex justify-between  items-end  pt-6 max-w-[200px] w-full">
             <FaLinkedinIn className=" cursor-pointer " size={20} />
             <FaGithub className="cursor-pointer " size={20} />
           </div>
