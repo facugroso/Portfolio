@@ -5,25 +5,25 @@ const Main = () => {
   return (
     <div id="main">
       <img
-        className="w-full h-screen object-cover object-left scale-x-[-1]"
-        src="public\bacround image.jpeg"
+        className="w-full h-screen object-cover object-left- scale-x-[-1.4]"
+        src="public\backround image.avif"
         alt="bacround image"
       />
       <div className="w-full h-screen absolute top-0 left-0 bg-white/12">
-        <div className="max-w-[-700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center">
-          <h1 className="sm:text-5xl text-xl font -bold text-white-800">
-            Es un placer para mí, contar con tu presencia. Yo soy Facundo Groso.
+        <div className="max-w-2xl m-auto h-full w-full flex flex-col justify-center lg:items-start items-center">
+          <h1 className="text-4xl text-xl font-bold text-white-800">
+            Welcome, I´m Facundo Groso.
           </h1>
-          <h2 className="flex sm:text-3xl text-2xl pt-4 text-white-800">
+          <h2 className="flex sm:text-3xl text-2xl pt-4 text-white-80">
             <TypeAnimation
               sequence={[
-                "Desarrollador Web",
+                "Developer FullStack jr.",
                 1000,
-                "Conocimientos de HTML5, CSS3 yJavaScript.",
+                "Knowledge of HTML5, CSS3, JavaScript and React.",
                 1000,
-                "Graduado del Bootcamp intencivo (teórico-práctico) de hackAcademy.",
+                "Graduated from the intentional Bootcamp (theoretical-practical) of Hack Academy.",
                 1000,
-                "Me especialicé en las tecnologias MERN y adquirí conocimientos de SQL.",
+                "I specialized in MERN technologies and acquired Knowledge of SQL.",
                 1000,
               ]}
               wrapper="span"
@@ -32,9 +32,9 @@ const Main = () => {
               style={{ fontSize: "1em", paddingLeft: "5px" }}
             />
           </h2>
-          <div className="flex justify-between pt-6 max-w-[200px] w-full">
-            <FaLinkedinIn className="cursor-pointer" size={20} />
-            <FaGithub className="cursor-pointer" size={20} />
+          <div className="flex justify-between  items-center  pt-6 max-w-[200px] w-full">
+            <FaLinkedinIn className=" cursor-pointer " size={20} />
+            <FaGithub className="cursor-pointer " size={20} />
           </div>
         </div>
       </div>
