@@ -1,55 +1,99 @@
-import React from "react";
-import { TypeAnimation } from "react-type-animation";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-const Main = () => {
+import React, { useState } from "react";
+import { AiOutlineMenu, AiOutlineHome } from "react-icons/ai";
+import { PiProjectorScreenChartLight } from "react-icons/pi";
+import { GoProjectSymlink } from "react-icons/go";
+import { BsPerson } from "react-icons/bs";
+import { CiMail } from "react-icons/ci";
+const Sidenav = () => {
+  const [nav, setNav] = useState(false);
+  const handleNav = () => {
+    setNav(!nav);
+  };
   return (
-    <div id="main">
-      <img
-        className="w-full h-screen object-cover object-left- scale-x-[-1.4]"
-        src="../../public/backgroundImage.jpg"
-        alt="bacround image"
+    <div>
+      <AiOutlineMenu
+        onClick={handleNav}
+        className="absolute top-4 right-4 z-[99] md:hidden"
       />
-      <div className="w-full h-screen absolute top-0 left-0 bg-white/12">
-        <div className="max-w-2xl m-auto h-full w-full flex flex-col justify-center lg:items-start items-center">
-          <h1 className="text-4xl text-xl font-bold text-white-800">
-            Welcome, I´m Facundo Groso.
-          </h1>
-          <h2 className="flex sm:text-3xl text-2xl pt-4 text-white-800">
-            <TypeAnimation
-              sequence={[
-                "Developer FullStack jr.",
-                1000,
-                "HTML5, CSS3, JavaScript and React.",
-                1000,
-                "Hack Academy Graduate.",
-                1000,
-                "I specialized in MERN.",
-                1000,
-              ]}
-              wrapper="span"
-              cursor={true}
-              repeat={Infinity}
-              style={{ fontSize: "0.8em", paddingLeft: "5px" }}
-            />
-          </h2>
-          <div className="flex justify-between  items-end  pt-6 max-w-[200px] w-full">
-            <FaLinkedinIn className=" cursor-pointer " size={20} />
-            <FaGithub className="cursor-pointer " size={20} />
-          </div>
-          <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center mt-3">
-            <svg
-              class="fill-current w-4 h-4 mr-2"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-            >
-              <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
-            </svg>
-            <span>Resume</span>
-          </button>
+      {nav ? (
+        <div className="fixed w-full h-screen bg-white/600 flex flex-col justify-center items-center z-40">
+          <a
+            onClick={handleNav}
+            href="#main"
+            className="w-[40%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+          >
+            <AiOutlineHome size={20} />
+            <span className="pl-4">Home</span>
+          </a>
+          <a
+            onClick={handleNav}
+            href="#work"
+            className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+          >
+            <PiProjectorScreenChartLight size={20} />
+            <span className="pl-4">Work</span>
+          </a>
+          <a
+            onClick={handleNav}
+            href="#proyect"
+            className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+          >
+            <GoProjectSymlink size={20} />
+            <span className="pl-4">Proyect</span>
+          </a>
+          <a
+            onClick={handleNav}
+            href="#resume"
+            className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+          >
+            <BsPerson size={20} />
+            <span className="pl-4">Resume</span>
+          </a>
+          <a
+            href="#contact"
+            className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+          >
+            <CiMail size={20} />
+            <span className="pl-4">Contact</span>
+          </a>
         </div>
-      </div>
+      ) : (
+        <div className="md:block hidden fixed top-[25%] z-10">
+          <div className="flex flex-col">
+            <a
+              href="#main"
+              className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+            >
+              <AiOutlineHome size={20} />
+            </a>
+            <a
+              href="#work"
+              className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+            >
+              <PiProjectorScreenChartLight size={20} />
+            </a>
+            <a
+              href="#proyect"
+              className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+            >
+              <GoProjectSymlink size={20} />
+            </a>
+            <a
+              href="#resume"
+              className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+            >
+              <BsPerson size={20} />
+            </a>
+            <a
+              href="#contact"
+              className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+            >
+              <CiMail size={20} />
+            </a>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
-
-export default Main;
+export default Sidenav;
