@@ -6,7 +6,7 @@ const Main = () => {
     <div id="main">
       <img
         className="w-full h-screen object-cover object-left- scale-x-[-1.4]"
-        src="public\backround image.avif"
+        src="public/backroundImage.avif"
         alt="bacround image"
       />
       <div className="w-full h-screen absolute top-0 left-0 bg-white/12">
