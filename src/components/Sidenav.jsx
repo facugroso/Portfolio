@@ -6,7 +6,7 @@ const Main = () => {
     <div id="main">
       <img
         className="w-full h-screen object-cover object-left- scale-x-[-1.4]"
-        src="https://www.ups.com/assets/resources/webcontent/images/how-to-ship-laptop-G-1134966284-Q421.jpg"
+        src="src\assets\backgroundImage.jpg"
         alt="bacround image"
       />
       <div className="w-full h-screen absolute top-0 left-0 bg-white/12">
