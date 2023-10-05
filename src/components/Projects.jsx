@@ -17,7 +17,7 @@ const Projects = () => {
       </p>
       <div className="grid sm:grid-cols-2 gap-12">
         <ProjectItem img={hyperx} title="1" />
-        <ProjectItem img={project2Img} title="2" />
+        <ProjectItem img={project2Img} title="Tute" />
         <ProjectItem img={project3Img} title="3" />
       </div>
     </div>
