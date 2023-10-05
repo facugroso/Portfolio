@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
-import project1Img from "../assets/project1Img.jpg";
+import hyperx from "../assets/hyperx.png";
 import project2Img from "../assets/project2Img.jpg";
 import project3Img from "../assets/project3Img.jpg";
 
@@ -16,7 +16,7 @@ const Projects = () => {
         adipisci? Distinctio asperiores illo quidem.
       </p>
       <div className="grid sm:grid-cols-2 gap-12">
-        <ProjectItem img={project1Img} title="1" />
+        <ProjectItem img={hyperx} title="1" />
         <ProjectItem img={project2Img} title="2" />
         <ProjectItem img={project3Img} title="3" />
       </div>
