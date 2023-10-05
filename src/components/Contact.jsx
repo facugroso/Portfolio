@@ -1,9 +1,12 @@
 import React from "react";
-import "../../src/index.css";
+// import "./Contact.css";
 
 const Contact = () => {
   return (
-    <div id="contact" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16">
+    <div
+      id="contact"
+      className="max-w-[1040px] m-auto md:pl-20 p-4 py-16 color"
+    >
       <h1 className="py-4 text-4xl font-bold text-center text-[#001b5e]">
         Contact
       </h1>
@@ -16,12 +19,12 @@ const Contact = () => {
           <div className="flex flex-col">
             <label className="uppercase text-sm py-2">Name</label>
             <input
-              className="border- rounded-lg p-3 flex border-gray-300"
+              className="border  rounded-lg p-3 flex border-gray-700 "
               type="text"
               name="name"
             />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col ">
             <label className="uppercase text-sm py-2">Phone Number</label>
             <input
               className="border- rounded-lg p-3 flex border-gray-300"
