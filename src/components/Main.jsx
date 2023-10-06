@@ -33,8 +33,12 @@ const Main = () => {
             />
           </h2>
           <div className="flex justify-between  items-end  pt-6 max-w-[200px] w-full">
-            <FaLinkedinIn className=" cursor-pointer " size={20} />
-            <FaGithub className="cursor-pointer " size={20} />
+            <a href="https://www.linkedin.com/in/facundogroso/">
+              <FaLinkedinIn className=" cursor-pointer " size={20} />
+            </a>
+            <a href="http://github.com/facugroso/">
+              <FaGithub className="cursor-pointer " size={20} />
+            </a>
           </div>
           <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center mt-3">
             <svg

@@ -1,8 +1,6 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
 import hyperx from "../assets/hyperx.png";
-import project2Img from "../assets/project2Img.jpg";
-import project3Img from "../assets/project3Img.jpg";
 
 const Projects = () => {
   return (
