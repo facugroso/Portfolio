@@ -47,7 +47,7 @@ const Contact = () => {
           />
         </div>
         <div className="flex flex-col py-2">
-          <label>Message</label>
+          <label>MESSAGE</label>
           <textarea
             className="border rounded-lg p-3 flex border-gray-300"
             name="message"

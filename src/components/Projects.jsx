@@ -12,11 +12,10 @@ const Projects = () => {
       </h1>
       <p className="text-center py-8">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum et id
-        sed repellendus eius ipsum dolores, maiores ducimus magnam veritatis
-        adipisci? Distinctio asperiores illo quidem.
+        sed repellendus
       </p>
       <div className="grid sm:grid-cols-2 gap-12">
-        <ProjectItem img={hyperx} title="1" />
+        <ProjectItem img={hyperx} title="HYPERX" />
       </div>
     </div>
   );

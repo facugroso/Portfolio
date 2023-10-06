@@ -15,9 +15,9 @@ const ProjectItem = ({ img, title }) => {
         <p className="pb-4 pt-2 text-white text-gray-700 font-bold cursor-pointer text-lg">
           React Js
         </p>
-        <a href="/">
+        <a href="https://hyperx-zeta.vercel.app/">
           <p className="text-center p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg">
-            More Info
+            Ver más
           </p>
         </a>
       </div>
