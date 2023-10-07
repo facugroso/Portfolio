@@ -40,7 +40,7 @@ const Main = () => {
               <FaGithub className="cursor-pointer " size={20} />
             </a>
           </div>
-          <a href="public/img/CV-Facundo Groso-2023.pdf" download>
+          <a href="public/img/CVFacundoGroso2023.pdf" download>
             <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center mt-3">
               <svg
                 class="fill-current w-4 h-4 mr-2"
