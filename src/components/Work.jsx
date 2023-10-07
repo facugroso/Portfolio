@@ -7,21 +7,20 @@ const data = [
     title: "Social Politics",
     duration: "4 months",
     details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum illum, amet quidem nihil adipisci reprehenderit",
+      "Recreational events with people of all ages. But also tasks such as maintenance.",
   },
   {
     year: 2021,
     title: "Supermarket",
     duration: "19 months",
     details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum illum, amet quidem nihil adipisci reprehenderit",
+      "Storage of merchandise, stock control and product replacement. Also attention to the counter.",
   },
   {
     year: 2019,
     title: "Cooperative P.S.",
     duration: "15 months",
-    details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum illum, amet quidem nihil adipisci reprehenderit",
+    details: "Troubleshooting, entering receipts into the system, etc.",
   },
 ];
 
