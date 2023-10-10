@@ -9,8 +9,7 @@ const Projects = () => {
         Projects
       </h1>
       <p className="text-center py-8">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum et id
-        sed repellendus
+        En estos 
       </p>
       <div className="grid sm:grid-cols-2 gap-12">
         <ProjectItem img={hyperx} title="HYPERX" />
