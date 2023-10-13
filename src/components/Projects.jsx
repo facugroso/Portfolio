@@ -9,7 +9,7 @@ const Projects = () => {
         Projects
       </h1>
       <p className="text-center py-8">
-        En estos trabajé con HTML, CSS, React.js, bootstrap, entre otros.
+        In this jobs, i working with HTML, CSS, React.js, bootstrap, an others.
       </p>
       <div className="grid sm:grid-cols-2 gap-12 ">
         <a href="https://hackflixmovies.netlify.app" target="_blank">
