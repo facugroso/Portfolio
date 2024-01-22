@@ -6,7 +6,7 @@ const Main = () => {
     <div id="main">
       <img
         className="w-full h-screen object-cover mt-3"
-        src="/img/2.jpg"
+        src="/img/photoWelcome.jpg"
         alt="bacround image"
       />
       <div className="w-full h-screen absolute top-0 left-0 bg-white/12">
