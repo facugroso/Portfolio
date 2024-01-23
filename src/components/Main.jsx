@@ -6,7 +6,7 @@ const Main = () => {
   return (
     <div id="main" className="relative">
       <img
-        className="w-full h-screen object-cover"
+        className="w-full min-h-screen object-cover"
         src="/img/photoWelcome.jpg"
         alt="background image"
       />
