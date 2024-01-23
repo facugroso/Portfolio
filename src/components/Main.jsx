@@ -4,20 +4,11 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 const Main = () => {
   return (
-    <div id="main" className="relative">
+    <div id="main" className="relative flex">
 
-       <div className="row">
-
-        <div className="col-sm-6">
-          <img
-          className="w-full min-h-screen object-cover"
-          src="/img/photoWelcome.jpg"
-          alt="background image"
-          />
-        </div>
-
-<div className="col-sm-6 absolute top-0 left-0 w-full h-full bg-white/12">
-        <div className="max-w-2xl mx-auto h-full flex flex-col justify-center lg:items-start items-center text-center">
+      {/* Contenido a la izquierda */}
+      <div className="absolute top-0 left-0 w-full h-full bg-white/12 flex items-center">
+        <div className="max-w-2xl mx-auto text-center">
           <h1 className="text-4xl text-xl font-bold text-white-800">
             Welcome, I'm Facundo Groso.
           </h1>
@@ -61,11 +52,19 @@ const Main = () => {
           </a>
         </div>
       </div>
-    </div> 
-      
-      
+
+      {/* Imagen a la derecha */}
+      <div className="w-full sm:w-1/2">
+        <img
+          className="w-full min-h-screen object-cover"
+          src="/img/photoWelcome.jpg"
+          alt="background image"
+        />
+      </div>
+
     </div>
   );
 };
 
 export default Main;
+
