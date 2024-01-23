@@ -1,18 +1,19 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+
 const Main = () => {
   return (
-    <div id="main">
+    <div id="main" className="relative">
       <img
-        className="w-full h-screen object-cover mt-3"
+        className="w-full h-screen object-cover"
         src="/img/photoWelcome.jpg"
-        alt="bacround image"
+        alt="background image"
       />
-      <div className="w-full h-screen absolute top-0 left-0 bg-white/12">
-        <div className="max-w-2xl m-auto h-full w-full flex flex-col justify-center lg:items-start items-center">
+      <div className="absolute top-0 left-0 w-full h-full bg-white/12">
+        <div className="max-w-2xl mx-auto h-full flex flex-col justify-center lg:items-start items-center text-center">
           <h1 className="text-4xl text-xl font-bold text-white-800">
-            Welcome, I´m Facundo Groso.
+            Welcome, I'm Facundo Groso.
           </h1>
           <h2 className="flex sm:text-3xl text-2xl pt-4 text-white-800">
             <TypeAnimation
@@ -32,18 +33,18 @@ const Main = () => {
               style={{ fontSize: "0.8em", paddingLeft: "5px" }}
             />
           </h2>
-          <div className="flex justify-between  items-end  pt-6 max-w-[200px] w-full">
+          <div className="flex justify-between items-end pt-6 max-w-[200px] w-full mx-auto">
             <a href="https://www.linkedin.com/in/facundogroso/">
-              <FaLinkedinIn className=" cursor-pointer " size={20} />
+              <FaLinkedinIn className="cursor-pointer" size={20} />
             </a>
             <a href="http://github.com/facugroso/">
-              <FaGithub className="cursor-pointer " size={20} />
+              <FaGithub className="cursor-pointer" size={20} />
             </a>
           </div>
           <a href="public/img/CVFacundoGroso2023.pdf" download>
-            <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center mt-3">
+            <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center mt-3">
               <svg
-                class="fill-current w-4 h-4 mr-2"
+                className="fill-current w-4 h-4 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
               >
@@ -57,4 +58,5 @@ const Main = () => {
     </div>
   );
 };
+
 export default Main;
