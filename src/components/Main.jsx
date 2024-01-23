@@ -13,7 +13,7 @@ const Main = () => {
           alt="background image"
         />
       </div>
-      <div className=" w-full sm:w-1/2 order-1 absolute top-0 left-0 bg-white/12 flex items-center">
+      {/* <div className=" w-full sm:w-1/2 order-1 absolute top-0 left-0 bg-white/12 flex items-center"> */}
         <div className="max-w-2xl mx-auto text-center">
           <h1 className="text-4xl text-xl font-bold text-white-800">
             Welcome, I'm Facundo Groso.
@@ -57,7 +57,7 @@ const Main = () => {
             </button>
           </a>
         </div>
-      </div>
+      {/* </div> */}
 
 
     </div>
