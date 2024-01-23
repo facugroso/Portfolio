@@ -6,8 +6,14 @@ const Main = () => {
   return (
     <div id="main" className="relative flex">
 
-      {/* Contenido a la izquierda */}
-      <div className="absolute top-0 left-0 w-full h-full bg-white/12 flex items-center">
+      <div className="w-full sm:w-1/2 order-2">
+        <img
+          className="w-full min-h-screen object-cover"
+          src="/img/photoWelcome.jpg"
+          alt="background image"
+        />
+      </div>
+      <div className=" w-full sm:w-1/2 order-1 absolute top-0 left-0 bg-white/12 flex items-center">
         <div className="max-w-2xl mx-auto text-center">
           <h1 className="text-4xl text-xl font-bold text-white-800">
             Welcome, I'm Facundo Groso.
@@ -53,18 +59,9 @@ const Main = () => {
         </div>
       </div>
 
-      {/* Imagen a la derecha */}
-      <div className="w-full sm:w-1/2">
-        <img
-          className="w-full min-h-screen object-cover"
-          src="/img/photoWelcome.jpg"
-          alt="background image"
-        />
-      </div>
 
     </div>
   );
 };
 
 export default Main;
-
